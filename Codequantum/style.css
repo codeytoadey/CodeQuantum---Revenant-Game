@@ -1,0 +1,44 @@
+*{
+        padding: 10px;
+        margin: 10px;
+}
+#header{
+    width: 633px;
+    height: 173px
+    border: 2px solid black;
+    background-image: url(title.png)
+}
+#game{
+    width: 500px;
+    height: 130px;
+    border: 2px solid black;
+    background-image: url(background.png);
+}
+#character{
+    width: 15px;
+    height: 30px;
+    image src: url(character.png); 
+    position: relative;
+    top: 110px;
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes jump{
+    0%{top:110px;}
+    50%{top: 70px;}
+    100%{top: 110px;}
+}
+#block{
+    width: 15px;
+    height: 30px;
+    image src: url(block.png)
+    position: relative;
+    top: 110px;
+    left: 485px;
+    animation: block 1s infinite linear;
+}
+@keyframes block {
+    0%{left: 485px;}
+    100%{left:-15px;}
+}
